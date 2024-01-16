@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccottet <ccottet@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ensai <ensai@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 10:35:16 by cosaph            #+#    #+#             */
-/*   Updated: 2023/12/25 18:22:34 by ccottet          ###   ########.fr       */
+/*   Updated: 2024/01/16 20:29:30 by ensai            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 int main()
 {
 	char source[] = "Hello, World!";
-	size_t length = strlen(source) + 1;  // inclut le caractère nul de fin de chaîne
+	size_t length = strlen(source) + 1;
 
 	char destination[length];
 	
