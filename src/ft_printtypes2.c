@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printtypes2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccottet <ccottet@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ensai <ensai@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 23:21:04 by ccottet           #+#    #+#             */
-/*   Updated: 2023/12/28 22:32:58 by ccottet          ###   ########.fr       */
+/*   Updated: 2024/01/17 14:27:54 by ensai            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,11 @@ int	ft_printptr(unsigned long long ptr)
 	int	print_length;
 
 	print_length = 0;
-	print_length += write(1, "0x", 2);
 	if (ptr == 0)
-		print_length += write(1, "0", 1);
+		print_length =write(1, "(nil)", 5);
 	else
 	{
+		print_length += write(1, "0x", 2);
 		ft_putptr(ptr);
 		print_length += ft_ptr_len(ptr);
 	}
